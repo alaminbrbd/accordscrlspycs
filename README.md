@@ -1,2 +1,2 @@
 # accordscrlspycs
-preview live:
+preview live:https://alaminbrbd.github.io/accordscrlspycs/
