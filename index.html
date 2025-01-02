@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="accordion">
+    <meta name="description" content="accordion">
+    <meta name="keywords" content="accordion">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="alaminwebdev">
+    <title>accordion_Custom</title>
+    <!--css links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="row">
+    <div class="col-4">
+      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#Introduction">Introduction</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#Technology">Technology</a>
+            <a class="nav-link ms-3 my-1" href="#Health">Health</a>
+          </nav>
+          <a class="nav-link" href="#Travel">Travel</a>
+          <a class="nav-link" href="#Environment">Environment</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#Education">Education</a>
+            <a class="nav-link ms-3 my-1" href="#Entrepreneurship">Entrepreneurship</a>
+          </nav>
+        </nav>
+      </nav>
+    </div>
+  
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+        <div id="Introduction">
+          <h4>Introduction</h4>
+          <p>Scrollspy is an interactive feature that enhances user navigation by 
+            highlighting active sections as users scroll through a page. It ensures smooth navigation and improves the user experience, especially on single-page websites.</p>
+        </div>
+        <div id="Technology">
+          <h5>Technology</h5>
+          <p>Technology continues to transform our daily lives, from the co
+            nvenience of smartphones to the innovation of artificial intelligence. 
+            It bridges gaps, connects people, and drives global progress across industries.</p>
+        </div>
+        <div id="Health">
+          <h5>Health</h5>
+          <p>Health is the cornerstone of a happy life. By adopting habits like regular exercise, 
+            a balanced diet, and mindfulness, individuals can boost their physical and mental well-being for a more fulfilling lifestyle.</p>
+        </div>
+        <div id="Travel">
+          <h4>Travel</h4>
+          <p>Travel inspires curiosity and broadens perspectives. Exploring new destinations allows us to connect
+             with different cultures, appreciate natural beauty, and create memories that last a lifetime.
+
+          </p>
+        </div>
+        <div id="Environment">
+          <h4>Environment</h4>
+          <p>Protecting the environment is essential for the planet's future. 
+            Simple actions like recycling, conserving energy, and reducing plastic waste can make a significant difference in preserving nature.</p>
+        </div>
+        <div id="Education">
+          <h5>Education</h5>
+          <p>Education is the foundation of personal and professional growth. 
+            It empowers individuals with knowledge, critical thinking, and the skills necessary to navigate an ever-evolving world.</p>
+        </div>
+        <div id="Entrepreneurship">
+          <h5>Entrepreneurship</h5>
+          <p>Entrepreneurship is about turning ideas into reality. It requires creativity, 
+            resilience, and innovation to build businesses that solve problems and contribute to economic growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--accordion-->
+  <h1>accordion_Custom</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Question 1: What is Bootstrap?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Answer: Bootstrap is a popular front-end framework for building responsive websites.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Question 2: How do I include Bootstrap in my project?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Answer: You can include it via CDN or download the files and link them locally.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              What is Accordion?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">An accordion is a great way to display collapsible content, and the content you use depends on the purpose of your website or project. Here are some ideas based on various themes:</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <!-- First Column -->
+        <div class="col-lg-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Policy 1: Privacy Policy
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  We value your privacy and do not share your data.
+                </div>
+              </div>
+            </div>
+            <!-- Additional Items -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                  Policy 2: Refund Policy
+                </button>
+              </h2>
+              <div id="collapsetwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Refunds are processed within 7-10 business days.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                  Policy 3: Terms of Service
+                </button>
+              </h2>
+              <div id="collapsethree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Guidelines for using our website and services.
+                </div>
+              </div>
+            </div>
+
+            
+             
+          </div>
+        </div>
+        
+        <!-- Second Column -->
+        <div class="col-lg-6">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Service 1: Web Design
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>Custom designs that reflect your brand identity.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                </div>
+              </div>
+            </div>
+            <!-- Additional Items -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwo" aria-expanded="true" aria-controls="panelsStayOpen-collapsetwo">
+                  Service 2: Digital Marketing
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapsetwo" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>SEO, social media marketing, and content strategy.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>&copy; 2022 Accordion_Custom. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+ </div>  <!-- End of Container -->
+  
+<!--js links-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--<script src="js/script.js"></script>-->
+</body>
+</html>
